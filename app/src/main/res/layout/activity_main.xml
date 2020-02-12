@@ -12,26 +12,27 @@
 
 
     <Button
+        android:id="@+id/btn_weather"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_weather"
-        android:text="@string/btn_weatherText">
+        android:text="@string/btn_weatherText"
+        android:onClick="goWeatherActivity">
 
     </Button>
 
 
     <Button
+        android:id="@+id/btn_astroPictureOfTheDay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_astroPictureOfTheDay"
         android:text="@string/btn_pictureOfTheDay">
 
     </Button>
 
     <Button
+        android:id="@+id/btn_NEO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_NEO"
         android:text="@string/btn_NEO">
 
     </Button>
