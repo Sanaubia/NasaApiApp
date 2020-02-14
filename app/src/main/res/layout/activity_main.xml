@@ -25,7 +25,8 @@
         android:id="@+id/btn_astroPictureOfTheDay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_pictureOfTheDay">
+        android:text="@string/btn_pictureOfTheDay"
+        android:onClick="PictureOfTheDay">
 
     </Button>
 
