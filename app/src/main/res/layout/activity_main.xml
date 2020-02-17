@@ -8,35 +8,55 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:layout_weight="0.35">
+    android:layout_weight="0.35"
+    android:theme="@style/Theme.MaterialComponents"
+    android:padding="20dp">
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_weather"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/btn_weatherText"
-        android:onClick="goWeatherActivity">
+        android:onClick="goWeatherActivity"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:layout_gravity="center_horizontal"
+        >
 
-    </Button>
+    </com.google.android.material.button.MaterialButton>
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_astroPictureOfTheDay"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/btn_pictureOfTheDay"
-        android:onClick="PictureOfTheDay">
+        android:onClick="PictureOfTheDay"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:layout_gravity="center_horizontal">
 
-    </Button>
+    </com.google.android.material.button.MaterialButton>
 
-    <Button
+
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_NEO"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="@string/btn_NEO">
+        android:text="@string/btn_NEO"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:layout_gravity="center_horizontal">
 
-    </Button>
+    </com.google.android.material.button.MaterialButton>
 
     <LinearLayout
         android:layout_width="match_parent"
