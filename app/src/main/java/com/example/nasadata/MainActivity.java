@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +24,13 @@ public class MainActivity extends AppCompatActivity {
         weather = (Button) findViewById(R.id.btn_weather);
         astroPic = (Button) findViewById(R.id.btn_astroPictureOfTheDay);
         neo = (Button) findViewById(R.id.btn_NEO);
+
+        View decorView = getWindow().getDecorView();
+        // Hide the status bar.
+        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
 
 
