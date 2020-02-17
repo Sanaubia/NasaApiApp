@@ -8,45 +8,48 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.68"
+        android:layout_weight="0.5"
         android:background="#FF5722">
 
         <ImageView
             android:id="@+id/main_bg"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="centerCrop"/>
+            android:contentDescription="@string/picture"
+            android:foreground="@drawable/insight_weather_bg"
+            android:scaleType="centerCrop" />
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_weight="0.33"
+        android:layout_weight="0.5"
         android:layout_height="0dp"
         android:layout_width="match_parent"
         android:background="#212121">
 
         <TextView
-            android:id="@+id/error"
-            android:layout_centerInParent="true"
-            android:visibility="gone"
+            android:id="@+id/tv_paragh"
             android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:textSize="20sp"
-            android:textColor="#FF5722"
-            android:gravity="center"
-            android:text="I'm sorry.\nI wasn't able to retrieve real time data."/>
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:textColor="#F44336"
+            android:text="@string/weather_paragh"
+            android:textAlignment="center"
+            />
 
         <TextView
             android:id="@+id/degrees"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_centerHorizontal="true"
-            android:textSize="90sp"
-            android:textColor="#FF5722"
-            android:text="-36°"/>
+            android:layout_below="@id/tv_paragh"
+            android:textSize="30sp"
+            android:textColor="#F44336"
+            />
 
         <TextView
-            android:id="@+id/weather"
+            android:id="@+id/wind"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -54,7 +57,7 @@
             android:textSize="30sp"
             android:gravity="center"
             android:textColor="#FF5722"
-            android:text="Sunny"/>
+            />
 
     </RelativeLayout>
 
