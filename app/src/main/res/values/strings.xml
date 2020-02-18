@@ -3,7 +3,9 @@
     <string name="btn_weatherText">Weather</string>
     <string name="btn_pictureOfTheDay">Astronomy Picture Of The Day</string>
     <string name="btn_NEO">Near Earth Objects</string>
-    <string name="weather_paragh">Latest Weather at Elysium Planitia at Mars</string>
+    <string name="weather_paragh">Weather at Elysium Planitia at Mars</string>
     <string name="picture">Picture</string>
+    <string name="today_weather">Today Weather</string>
+    <string name="yesterday_weather">Yesterday Weather</string>
 
 </resources>
