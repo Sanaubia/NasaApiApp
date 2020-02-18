@@ -6,7 +6,6 @@ import org.json.JSONObject;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.Map;
 
 public class PictureEngine implements HTTPGetThread.OnRequestDoneInterface {
@@ -26,6 +25,7 @@ public class PictureEngine implements HTTPGetThread.OnRequestDoneInterface {
 
     protected String url;
     protected PictureOftheDayUrlAvailableInterface uiCallback;
+    protected String description;
 
     // Constructor
     public PictureEngine(PictureOftheDayUrlAvailableInterface callbackInterface)
@@ -35,6 +35,10 @@ public class PictureEngine implements HTTPGetThread.OnRequestDoneInterface {
 
     public String getUrl() {
         return url;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public void setUrl(String url) {
@@ -70,6 +74,8 @@ public class PictureEngine implements HTTPGetThread.OnRequestDoneInterface {
             Map<String, Object> parsed = JsonUtils.jsonToMap(new JSONObject(data));
             String url = String.valueOf(parsed.get("url"));
             this.url = url;
+            String descpription = String.valueOf(parsed.get("explanation"));
+            this.description = descpription;
 
 
             /*
