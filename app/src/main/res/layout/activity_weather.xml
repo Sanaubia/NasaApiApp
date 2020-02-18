@@ -3,12 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents"
     style="@style/Theme.AppCompat.Light.NoActionBar">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5"
+        android:layout_weight="0.3"
         android:background="#FF5722">
 
         <ImageView
@@ -19,10 +20,41 @@
             android:foreground="@drawable/insight_weather_bg"
             android:scaleType="centerCrop" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_yesterdayWeather"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yesterday_weather"
+                        android:bottomRightRadius="10dp"
+                        android:bottomLeftRadius="10dp"
+                        android:topLeftRadius="10dp"
+                        android:topRightRadius="10dp">
+
+                    </com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_todayWeather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today_weather"
+                    android:bottomRightRadius="10dp"
+                    android:bottomLeftRadius="10dp"
+                    android:topLeftRadius="10dp"
+                    android:topRightRadius="10dp">
+
+                </com.google.android.material.button.MaterialButton>
+
+                </LinearLayout>
+
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_weight="0.5"
+        android:layout_weight="0.6"
         android:layout_height="0dp"
         android:layout_width="match_parent"
         android:background="#212121">
@@ -45,15 +77,28 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/tv_paragh"
             android:textSize="30sp"
+            android:gravity="center"
             android:textColor="#F44336"
             />
+
+        <TextView
+            android:id="@+id/degreesMin"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/degrees"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#F44336"
+            />
+
 
         <TextView
             android:id="@+id/wind"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/degrees"
+            android:layout_below="@id/degreesMin"
             android:textSize="30sp"
             android:gravity="center"
             android:textColor="#FF5722"

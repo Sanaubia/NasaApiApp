@@ -46,8 +46,8 @@ public class PictureEngine implements HTTPGetThread.OnRequestDoneInterface {
     public void getPictureUrl()
     {
         //String url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=65dbec3aae5e5bf9000c7a956c8b76f6";
-        //String url =  "https://api.nasa.gov/planetary/apod?api_key=eDKy0MMzXpklGv8pdPedrQiluatiCgjPOpKax8Yu";
-        String url = "https://api.nasa.gov/neo/rest/v1/feed?start_date="+dtf.format(now)+"&api_key=eDKy0MMzXpklGv8pdPedrQiluatiCgjPOpKax8Yu";
+        String url =  "https://api.nasa.gov/planetary/apod?api_key=eDKy0MMzXpklGv8pdPedrQiluatiCgjPOpKax8Yu";
+        //String url = "https://api.nasa.gov/neo/rest/v1/feed?start_date="+dtf.format(now)+"&api_key=eDKy0MMzXpklGv8pdPedrQiluatiCgjPOpKax8Yu";
 
         HTTPGetThread getter = new HTTPGetThread(url, this);
         getter.setListener(this);
