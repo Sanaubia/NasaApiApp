@@ -32,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-
-
-
     }
 
     public void goWeatherActivity(View view) {
