@@ -59,6 +59,7 @@
         android:layout_width="match_parent"
         android:background="#212121">
 
+
         <TextView
             android:id="@+id/tv_paragh"
             android:layout_height="wrap_content"
@@ -68,6 +69,15 @@
             android:textColor="#F44336"
             android:text="@string/weather_paragh"
             android:textAlignment="center"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
             />
 
         <TextView
