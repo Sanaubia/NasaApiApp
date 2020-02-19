@@ -20,36 +20,6 @@
             android:foreground="@drawable/insight_weather_bg"
             android:scaleType="centerCrop" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btn_yesterdayWeather"
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/yesterday_weather"
-                        android:bottomRightRadius="10dp"
-                        android:bottomLeftRadius="10dp"
-                        android:topLeftRadius="10dp"
-                        android:topRightRadius="10dp">
-
-                    </com.google.android.material.button.MaterialButton>
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_todayWeather"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/today_weather"
-                    android:bottomRightRadius="10dp"
-                    android:bottomLeftRadius="10dp"
-                    android:topLeftRadius="10dp"
-                    android:topRightRadius="10dp">
-
-                </com.google.android.material.button.MaterialButton>
-
-                </LinearLayout>
 
     </RelativeLayout>
 
@@ -100,6 +70,7 @@
             android:textSize="30sp"
             android:gravity="center"
             android:textColor="#F44336"
+
             />
 
 
@@ -112,8 +83,64 @@
             android:textSize="30sp"
             android:gravity="center"
             android:textColor="#FF5722"
+
             />
 
     </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#212121"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+
+
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_yesterdayWeather"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:text="@string/yesterday_weather"
+                android:layout_gravity="left"
+                >
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_todayWeather"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:text="@string/today_weather">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
 
 </LinearLayout>
