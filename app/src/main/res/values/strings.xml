@@ -7,5 +7,6 @@
     <string name="picture">Picture</string>
     <string name="today_weather">Today</string>
     <string name="yesterday_weather">Yesterday</string>
+    <string name="textview">Nasa data app</string>
 
 </resources>
