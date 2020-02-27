@@ -68,6 +68,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_NEO"
         android:layout_width="300dp"
+        android:onClick="NasaPictures"
         android:layout_height="wrap_content"
         android:text="@string/btn_NEO"
         android:bottomRightRadius="10dp"
