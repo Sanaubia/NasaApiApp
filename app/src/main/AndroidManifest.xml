@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".NasaPictures"></activity>
         <activity android:name=".WeatherActivity"/>
         <activity android:name=".PictureOfTheDay"/>
         <activity android:name=".MainActivity">
