@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:layout_weight="0.35"
@@ -28,9 +29,9 @@
             android:gravity="center"
             android:text="@string/textview"
             android:textAllCaps="false"
-            android:textColor="#1B1212"
             android:textSize="35sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_primary"/>
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
@@ -44,6 +45,13 @@
         android:topLeftRadius="10dp"
         android:topRightRadius="10dp"
         android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="12dp"
+        app:icon="@drawable/ic_wb_sunny_black_24dp"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconTint="@color/design_default_color_surface"
+        android:textColor="@color/design_default_color_on_primary"
         >
 
     </com.google.android.material.button.MaterialButton>
@@ -52,6 +60,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_astroPictureOfTheDay"
         android:layout_width="300dp"
+        android:textSize="12dp"
         android:layout_height="wrap_content"
         android:text="@string/btn_pictureOfTheDay"
         android:onClick="PictureOfTheDay"
@@ -59,7 +68,13 @@
         android:bottomLeftRadius="10dp"
         android:topLeftRadius="10dp"
         android:topRightRadius="10dp"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        app:icon="@drawable/ic_image_black_24dp"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconTint="@color/design_default_color_surface"
+        android:textColor="@color/design_default_color_on_primary">
 
     </com.google.android.material.button.MaterialButton>
 
@@ -75,7 +90,13 @@
         android:bottomLeftRadius="10dp"
         android:topLeftRadius="10dp"
         android:topRightRadius="10dp"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/design_default_color_on_primary"
+        app:icon="@drawable/ic_image_black_24dp"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconTint="@color/design_default_color_surface"
+        android:textSize="12dp">
 
     </com.google.android.material.button.MaterialButton>
 

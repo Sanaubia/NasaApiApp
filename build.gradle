@@ -9,7 +9,7 @@ buildscript {
     }
     dependencies {
         //classpath 'com.android.tools.build:gradle:5.4.1'
-        classpath 'com.android.tools.build:gradle:3.5.3'
+        classpath 'com.android.tools.build:gradle:3.6.0'
         //compile 'com.google.android.material:material:1.0.0'
         //implementation 'com.google.android.material:material:1.0.0'
         
