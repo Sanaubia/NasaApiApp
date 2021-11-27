@@ -84,7 +84,7 @@ public class WeatherActivity extends AppCompatActivity {
                         try {
                             //Using JsonArray. We put sol_keys inside the array. There is 7 keys (7days data)
                             JSONArray jsonArray = response.getJSONArray("sol_keys");
-
+                            if (jsonArray.length() != 0){
                             //Reading the data from response-data to String and using index 6 to get newest temperature data. Showing the data in TextView.
                             String temp = response.getJSONObject(jsonArray.getString(6)).getJSONObject("AT").getString("av");
                             degrees.setText("\nTemp (avg): "+temp + celciusSign +"\n");
@@ -94,7 +94,10 @@ public class WeatherActivity extends AppCompatActivity {
                             //Get and show windSpeed
                             String windSpeed = response.getJSONObject(jsonArray.getString(6)).getJSONObject("HWS").getString("av");
                             wind.setText("Wind (avg): "+windSpeed + "m/s");
-
+                            }
+                            else {
+                                wind.setText("Failed to get data. Try again later.");
+                            }
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -119,16 +122,20 @@ public class WeatherActivity extends AppCompatActivity {
 
                         try {
                             JSONArray jsonArray = response.getJSONArray("sol_keys");
-                            //Reading the data from response-data to String and using index 5 to get yesterday temperature data. Showing the data in TextView.
-                            String temp = response.getJSONObject(jsonArray.getString(5)).getJSONObject("AT").getString("av");
-                            degrees.setText("\nTemp (avg): "+temp + celciusSign +"\n");
-
-                            String tempMin = response.getJSONObject(jsonArray.getString(5)).getJSONObject("AT").getString("mn");
-                            degreesMin.setText("Temp (min): "+tempMin + celciusSign +"\n");
-
-                            String windSpeed = response.getJSONObject(jsonArray.getString(5)).getJSONObject("HWS").getString("av");
-                            wind.setText("Wind (avg): "+windSpeed + "m/s");
-
+                            if (jsonArray.length() != 0){
+                                //Reading the data from response-data to String and using index 5 to get newest temperature data. Showing the data in TextView.
+                                String temp = response.getJSONObject(jsonArray.getString(5)).getJSONObject("AT").getString("av");
+                                degrees.setText("\nTemp (avg): "+temp + celciusSign +"\n");
+                                //Get and show the minimum temperature
+                                String tempMin = response.getJSONObject(jsonArray.getString(5)).getJSONObject("AT").getString("mn");
+                                degreesMin.setText("Temp (min): "+tempMin + celciusSign +"\n");
+                                //Get and show windSpeed
+                                String windSpeed = response.getJSONObject(jsonArray.getString(5)).getJSONObject("HWS").getString("av");
+                                wind.setText("Wind (avg): "+windSpeed + "m/s");
+                            }
+                            else {
+                                wind.setText("Failed to get data. Try again later.");
+                            }
 
                         } catch (JSONException e) {
                             e.printStackTrace();
