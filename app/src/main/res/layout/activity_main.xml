@@ -34,28 +34,6 @@
             android:textColor="@color/design_default_color_primary"/>
     </LinearLayout>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_weather"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_weatherText"
-        android:onClick="goWeatherActivity"
-        android:bottomRightRadius="10dp"
-        android:bottomLeftRadius="10dp"
-        android:topLeftRadius="10dp"
-        android:topRightRadius="10dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:textSize="12dp"
-        app:icon="@drawable/ic_wb_sunny_black_24dp"
-        app:iconGravity="textStart"
-        app:iconPadding="10dp"
-        app:iconTint="@color/design_default_color_surface"
-        android:textColor="@color/design_default_color_on_primary"
-        >
-
-    </com.google.android.material.button.MaterialButton>
-
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_astroPictureOfTheDay"

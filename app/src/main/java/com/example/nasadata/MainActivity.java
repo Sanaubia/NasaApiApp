@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        weather = (Button) findViewById(R.id.btn_weather);
         astroPic = (Button) findViewById(R.id.btn_astroPictureOfTheDay);
         neo = (Button) findViewById(R.id.btn_NEO);
 
@@ -52,12 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-
-    public void goWeatherActivity(View view) {
-        Intent intent = new Intent(this,WeatherActivity.class);
-        startActivity(intent);
-    }
 
     public void PictureOfTheDay(View view) {
         Intent intent = new Intent(this,PictureOfTheDay.class);
